@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  background-color: #422ED4;
+  color: #FFF;
+  font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.logo-container {
+  margin-right: 10px;
+}
+
+.main {
+  background-color: #E5E5E5;
+}
+
+.categories-container {
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.categories-container h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 59px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.category-items {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: -20px;
+  margin-bottom: -15px;
 }
 
-.App-link {
-  color: #61dafb;
+.category-item {
+  width: 170px;
+  height: 57px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #FFF;
+  padding: 16px 19px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.category-item:hover {
+  color: #FFF;
+  background-color: #422ED4;
+}
+
+.category-item:active {
+  background-color: #2b16cf;
+}
+
+.joke-container {
+  padding-top: 160px;
+  padding-bottom: 145px;
+  background-image: url('images/clipart.png');
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
+}
+
+.joke-bubble {
+  color: #FFF;
+  background-color: #422ED4;
+  padding: 24px;
+  height: 162px;
+  border-radius: 25px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
